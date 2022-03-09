@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) => res.send('Node Tabuada'))
+const indexController = require('../controllers/index')
+
+router.get('/', indexController.home)
 
 module.exports = router
