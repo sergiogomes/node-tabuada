@@ -1,0 +1,24 @@
+<%- include('../../partials/header') %>
+    
+<div class="row g-5">
+  <div class="col-md-6">
+    <h2>Tabuada for number <% num %></h2>
+    
+    <table class="table table-striped table-bordered table-hover">
+      <tbody>
+        <% for (let i = 0; i <= 100; i ++) { %>
+          <tr>
+            <td><%= num %></td>
+            <td>&nbsp; x &nbsp;</td>
+            <td><%= i %></td>
+            <td>&nbsp; = &nbsp;</td>
+            <td><%= (num * i) %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<%- include('../../partials/footer') %>
