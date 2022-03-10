@@ -1,5 +1,9 @@
 const list = (req, res) => {
-  res.render('tabuada/list')
+  const numbers = []
+  for (let i = 0; i <= 100; i ++) {
+    numbers.push(i)
+  }
+  res.render('tabuada/list', { numbers })
 }
 
 const table = (req, res) => {

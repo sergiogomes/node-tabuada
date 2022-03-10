@@ -5,9 +5,9 @@
     <h2>Node Tabuada</h2>
     <p>Generate the multiplication table of a number from 1 to 100.</p>
     <ul class="icon-list">
-      <% for(let i = 1; i <= 100; i++) { %>
+      <% numbers.map(i => { %>
         <li><a href="tabuadas/for/<%= i %>">Multiplication table for <%= i %></a></li>
-      <% } %>
+      <% }) %>
     </ul>
   </div>
 </div>
